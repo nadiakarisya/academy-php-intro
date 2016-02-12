@@ -5,4 +5,4 @@ php:
   - '5.6'
   - '7.0'
   - 'hhvm'
-phpunit
+script: phpunit --configuration phpunit.xml
