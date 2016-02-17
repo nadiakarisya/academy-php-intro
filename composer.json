@@ -1,8 +1,0 @@
-{
-  "require" : {
-    "l3l0/php-travis-client": "*"
-  },
-  "require-dev": {
-    "heroku/heroku-buildpack-php": "*"
-  }
-}
