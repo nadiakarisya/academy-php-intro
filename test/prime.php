@@ -7,7 +7,8 @@ class PrimeTest extends PHPUnit_Framework_TestCase
         include(__DIR__ . '/../src/prime.php');
         return ob_get_clean();
     }
-    
+
+
     public function testDummy() {
         $output = $this->include_file();
         $this->assertEquals("", $output, "Parameter tidak diset, harus mengeluarkan string kosong");
