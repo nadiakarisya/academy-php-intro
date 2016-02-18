@@ -2,11 +2,14 @@
 
 class ReverseTest extends PHPUnit_Framework_TestCase
 {
-    public $file = __DIR__ . '/../src/reverse.php';
-
+    public function include_file(){
+        ob_start();
+        include(__DIR__ . '/../src/reverse.php');
+        return ob_get_clean();
+    }
+    
     public function testDummy() {
-        include($this->file);
-        $this->assertEquals(true, $this->hasOutput(), "Harus mengeluarkan output string");
-        $this->expectOutputString("");
+        $output = $this->include_file();
+        $this->assertEquals("", $output, "Parameter tidak diset, harus mengeluarkan string kosong");
     }
 }
