@@ -1,5 +1,4 @@
 <?php
-
 $amount = $_REQUEST['amount'];
 
 function atm($amount) {
