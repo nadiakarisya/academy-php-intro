@@ -19,4 +19,4 @@ function atm($amount) {
 
 $res = atm($amount);
 
-echo json_encode($res);
+echo json_encode(array());
